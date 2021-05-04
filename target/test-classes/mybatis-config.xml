@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<mappers>
+		<mapper resource="cursoDAgil/bd/mappers/ClienteMapper.xml"/>
+		<mapper resource="cursoDAgil/bd/mappers/DireccionMapper.xml"/>	
+		<mapper resource="cursoDAgil/bd/mappers/GananciasMapper.xml"/>	
+		<mapper resource="cursoDAgil/bd/mappers/DetalleVentasMapper.xml"/>	
+		<mapper resource="cursoDAgil/bd/mappers/MarcasMapper.xml"/>	
+		<mapper resource="cursoDAgil/bd/mappers/VentaMapper.xml"/>	
+		<mapper resource="cursoDAgil/bd/mappers/ProductosMapper.xml"/>	
+	</mappers>
+</configuration>
+
