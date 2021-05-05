@@ -29,14 +29,16 @@ public class GananciaServiceImplTest {
 	@Test
 	public void pruebaConsultarTodo() {
 		int reg;
-		System.out.println("Test consultar todas las ganancias");
+		List<Ganancias> lista;
+		System.out.println("\nTest consultar todas las ganancias---");
 		try{
-			List<Ganancias> lista = gananciaService.obtenerGanancias();
-			reg = lista.size();
+			lista=gananciaService.obtenerGanancias();
+			reg=lista.size();
 			assertEquals(lista.size(), reg);
 			System.out.println("\nRegistros en la tabla: " + reg);
+			
 		}catch (Exception e) {
-			System.out.println("error5" + e);
+			System.out.println("error al consultar" + e);
 		}
 	}
 	
@@ -45,7 +47,7 @@ public class GananciaServiceImplTest {
 		Ganancias ganancias = new Ganancias();
 		Map<String, Date> mapGanancias = new HashMap<>();
 		SimpleDateFormat DateFor = new SimpleDateFormat("dd/MM/yyyy");
-		System.out.println("Test obtener ganancia por fecha");
+		System.out.println("\nTest obtener ganancia por fecha---");
 		try{
 			Date date = DateFor.parse("08/07/2019");
 			mapGanancias.put("fecha", date);
@@ -63,7 +65,7 @@ public class GananciaServiceImplTest {
 	@Test
 	public void nuevoRegistro() {
 		Ganancias ganancia = new Ganancias();
-		System.out.println("\nTest nuevo registro");
+		System.out.println("\nTest nuevo registro--");
 		try {
 			//ganancia.setIdGanancia(4);
 			ganancia.setIdVenta(3);

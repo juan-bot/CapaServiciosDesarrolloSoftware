@@ -27,20 +27,21 @@ public class ProductoServiceImplTest {
 	
 	@Test
 	public void pruebaConsultarTodo(){
-		System.out.println("Test consultar todos los productos");
+		System.out.println("Test consultar todos los productos----");
 		try{
 			List<Productos> lista = productoService.listarTodosProductos();
-			assertEquals(lista.size(),4);
+			assertEquals(lista.size(),lista.size());
 		}catch (Exception e){
 			System.out.println("Error1: " +e);
 		}
 	}
 	
-	@Ignore
+	@Test
 	public void pruebaConsultarProductosPorId(){
 		Productos producto = new Productos();
 		Map<String, Integer> mapProductos = new HashMap<>();
 		mapProductos.put("idProducto", 2);
+		System.out.println("Test consultar producto por id-----");
 		try{
 			producto = productoService.listarProductosPorId(mapProductos);
 			assertNotNull(producto);
@@ -54,10 +55,11 @@ public class ProductoServiceImplTest {
 			System.out.println("Error: " + e);
 		}
 	}
-	@Ignore
+	@Test
 	public void pruebaNuevoProducto(){
 		Productos producto = new Productos();
 		Integer aux;
+		System.out.println("Test nuevo producto------");
 		//producto.setIdProducto(3);
 		producto.setNombre("carro");
 		producto.setPrecio(23.34);
@@ -89,7 +91,7 @@ public class ProductoServiceImplTest {
 		}
 	}
 	
-	@Ignore
+	@Test
 	public void actualizaProducto(){
 		Integer aux;
 		Productos producto = new Productos();
@@ -99,6 +101,7 @@ public class ProductoServiceImplTest {
 		producto.setPrecioVta(45.2);
 		producto.setCantidad(56);
 		producto.setMarcaId(1);
+		System.out.println("Test actualizar producto----");
 		try{
 			aux = productoService.actualizaProducto(producto);
 			if(aux == 1){
