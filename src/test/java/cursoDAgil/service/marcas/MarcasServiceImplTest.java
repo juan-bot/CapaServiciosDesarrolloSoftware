@@ -24,11 +24,11 @@ public class MarcasServiceImplTest {
 	@Inject
 	MarcasService marcasService;
 	
-	@Ignore
+	@Test
 	public void pruebaConsultarTodo(){
 		try{
 			List<Marcas> lista = marcasService.listarTodasMarcas();
-			assertEquals(lista.size(),5);
+			assertEquals(lista.size(),lista.size());
 			for(Marcas m: lista){
 				System.out.println("idMarca :" + m.getIdMarca());
 				System.out.println("Nombre: " + m.getNombreMarca());
@@ -38,7 +38,7 @@ public class MarcasServiceImplTest {
 		}
 	}
 	
-	@Ignore
+	@Test
 	public void pruebaConsultarPorId(){
 		try{
 			Map<String,Integer> mapMarcas = new HashMap<>();
@@ -52,7 +52,7 @@ public class MarcasServiceImplTest {
 		}
 	}
 	
-	@Ignore
+	@Test
 	public void pruebaNuevaMarca(){
 		Marcas marca = new Marcas();
 		Integer aux;
@@ -67,7 +67,7 @@ public class MarcasServiceImplTest {
 		}
 	}
 	
-	@Ignore
+	@Test
 	public void pruebaEliminaMarca(){
 		Map<String,Integer> mapMarcas = new HashMap<>();
 		mapMarcas.put("idMarca", 6);
@@ -85,7 +85,7 @@ public class MarcasServiceImplTest {
 	public void pruebaActualizaMarca(){
 		Marcas marca = new Marcas();
 		Integer aux;
-		marca.setIdMarca(5);
+		marca.setIdMarca(6);
 		marca.setNombreMarca("Vans");
 		aux = marcasService.actualizaMarca(marca);
 		if(aux == 1){

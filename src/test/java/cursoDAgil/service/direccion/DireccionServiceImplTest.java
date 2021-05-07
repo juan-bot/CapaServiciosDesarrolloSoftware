@@ -25,8 +25,7 @@ public class DireccionServiceImplTest {
 	@Inject
 	DireccionService direccionService;
 	
-	@Ignore
-	//YA SALE
+	@Test
 	public void consultarDireccionPorId() {
 		Direccion direccion = new Direccion();
 		Map<String, Integer> mapDireccion = new HashMap<>();
@@ -46,8 +45,7 @@ public class DireccionServiceImplTest {
 		}
 	}
 	
-	@Ignore
-	//YA SALE
+	@Test
 	public void editarDireccion(){
 		Direccion direccion = new Direccion();
 		Map<String, Integer> mapDireccion=new HashMap<>();
@@ -83,8 +81,7 @@ public class DireccionServiceImplTest {
 		}
 	}
 
-	@Ignore
-	//YA SALE
+	@Test
 	public void nuevoRegistro() {
 		Direccion direccion = new Direccion();
 		System.out.println("Test nuevo registro");
@@ -102,8 +99,7 @@ public class DireccionServiceImplTest {
 		}
 	}
 	
-	@Ignore
-	//YA SALE
+	@Test
 	public void eliminarDireccion(){
 		Map<String, Integer> mapDireccion=new HashMap<>();
 		mapDireccion.put("idDireccion", 17);

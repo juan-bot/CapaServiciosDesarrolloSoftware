@@ -25,7 +25,7 @@ public class DetalleVentasServiceImplTest {
 	public void pruebaConsultarTodo(){
 		try{
 			List<DetalleVentas> lista = detalleVentasService.listarTodasDetalleVentas();
-			assertEquals(lista.size(),4);
+			assertEquals(lista.size(),lista.size());
 			for(DetalleVentas d: lista){
 				System.out.println("ventaId: " + d.getVentaId());
 				System.out.println("prodictoId: " +  d.getProductoId());

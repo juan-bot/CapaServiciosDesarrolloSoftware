@@ -60,7 +60,6 @@ public class ProductoServiceImplTest {
 		Productos producto = new Productos();
 		Integer aux;
 		System.out.println("Test nuevo producto------");
-		//producto.setIdProducto(3);
 		producto.setNombre("carro");
 		producto.setPrecio(23.34);
 		producto.setPrecioVta(45.2);
@@ -95,7 +94,6 @@ public class ProductoServiceImplTest {
 	public void actualizaProducto(){
 		Integer aux;
 		Productos producto = new Productos();
-		producto.setIdProducto(2);
 		producto.setNombre("telefono");
 		producto.setPrecio(33.2);
 		producto.setPrecioVta(45.2);
