@@ -52,5 +52,14 @@ public class VentasServiceImpl implements VentasService, Serializable{
 		// TODO Auto-generated method stub
 		return ventasDao.actualizaVenta(venta);
 	}
+	@Override
+	public Integer numberOfRows() {
+		return ventasDao.numberOfRows();
+	}
+	@Override
+	public List<Ventas> ListarVentaPorId(Map<String, Integer> map) {
+		// TODO Auto-generated method stub
+		return ventasDao.ListarVentaPorId(map);
+	}
 
 }

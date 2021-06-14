@@ -38,7 +38,7 @@ public class MarcasServiceImplTest {
 		}
 	}
 	
-	@Test
+	@Ignore
 	public void pruebaConsultarPorId(){
 		try{
 			Map<String,Integer> mapMarcas = new HashMap<>();
@@ -52,7 +52,7 @@ public class MarcasServiceImplTest {
 		}
 	}
 	
-	@Test
+	@Ignore
 	public void pruebaNuevaMarca(){
 		Marcas marca = new Marcas();
 		Integer aux;
@@ -67,7 +67,7 @@ public class MarcasServiceImplTest {
 		}
 	}
 	
-	@Test
+	@Ignore
 	public void pruebaEliminaMarca(){
 		Map<String,Integer> mapMarcas = new HashMap<>();
 		mapMarcas.put("idMarca", 6);
@@ -81,7 +81,7 @@ public class MarcasServiceImplTest {
 		}
 	}
 	
-	@Test
+	@Ignore
 	public void pruebaActualizaMarca(){
 		Marcas marca = new Marcas();
 		Integer aux;

@@ -30,8 +30,12 @@ public class GananciaServiceImpl implements GananciaService, Serializable{
 	}
 
 	@Override
-	public List<Ganancias> obtenerGananciasPorFecha(Map<String, Date> mapGanancias) {
+	public List<Ganancias> obtenerGananciasPorFecha(Map<String, String> mapGanancias) {
 		return gananciasDao.obtenerGananciasPorFecha(mapGanancias);
 	}
 
+	@Override
+	public Integer numberOfRows() {
+		return gananciasDao.numberOfRows();
+	}
 }

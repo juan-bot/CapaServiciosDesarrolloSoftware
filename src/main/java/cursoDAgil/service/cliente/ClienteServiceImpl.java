@@ -45,6 +45,10 @@ public class ClienteServiceImpl implements ClienteService, Serializable {
 		return clienteDao.eliminarCliente(mapCliente);
 	}
 	
+	@Override
+	public Integer numberOfRows() {
+		return clienteDao.numberOfRows();
+	}
 	
 
 }

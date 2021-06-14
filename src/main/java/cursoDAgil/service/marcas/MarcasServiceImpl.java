@@ -45,5 +45,9 @@ public class MarcasServiceImpl implements MarcasService, Serializable {
 	public Integer actualizaMarca(Marcas marca) {
 		return marcasDao.actualizaMarca(marca);
 	}
-
+	
+	@Override
+	public Integer numberOfRows() {
+		return marcasDao.numberOfRows();
+	}
 }

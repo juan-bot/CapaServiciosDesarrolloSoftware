@@ -36,7 +36,7 @@ public class ProductoServiceImplTest {
 		}
 	}
 	
-	@Test
+	@Ignore
 	public void pruebaConsultarProductosPorId(){
 		Productos producto = new Productos();
 		Map<String, Integer> mapProductos = new HashMap<>();
@@ -55,7 +55,7 @@ public class ProductoServiceImplTest {
 			System.out.println("Error: " + e);
 		}
 	}
-	@Test
+	@Ignore
 	public void pruebaNuevoProducto(){
 		Productos producto = new Productos();
 		Integer aux;
@@ -90,7 +90,7 @@ public class ProductoServiceImplTest {
 		}
 	}
 	
-	@Test
+	@Ignore
 	public void actualizaProducto(){
 		Integer aux;
 		Productos producto = new Productos();

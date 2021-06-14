@@ -12,4 +12,7 @@ public interface VentasService {
 	List<Ventas> ListarDetalleVenta();
 	List<Ventas> obtenerVentaPorClienteId(Map<String, Integer> mapVentas);
 	Integer actualizaVenta(Ventas venta);
+	Integer numberOfRows();
+	List<Ventas> ListarVentaPorId (Map<String, Integer> map);
+
 }
